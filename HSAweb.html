@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <link rel="stylesheet" href="HSAstyle.css">
+        <link rel="icon" type="image/x-icon" href="assets\HSA Logo.png">
+        <style>
+        </style>
+        <script>
+            const path = require('path');
+
+            // Serve static files from the "public" directory
+            app.use(express.static(path.join(__dirname, 'public')));
+
+            // Catch-all route to serve index.html
+            app.get('/', (req, res) => {
+            res.sendFile(path.join(__dirname, 'public', 'HSAweb.html'));
+            });
+        </script>
+    </head>
+    <body>
+        <div id="nav" class="nav">
+            <img alt="Logo" height="50" src="assets\HSA Logo.png" width="50"/>
+            <h2>Hindu Student's Association</h2>
+            <div class="nav-links">
+                <a href="#mainctn">Home</a>
+                <a href="#about">About</a>
+                <a href="events.html">Events</a>
+                <a href="#footer">Contact</a>
+            </div>
+        </div>
+        <div id="mainctn" class="main-content row">
+            <div class="text-center">
+                <h1>Hindu Student's Association</h1>
+                <p>mission statement, welcome to the website, what the club is at usa where the club meets (room #)</p>
+            </div>
+        </div>
+        <script src="HSAscript.js" defer></script>
+        <div class="executives">
+            <h2>Meet the Club Executives</h2>
+            <div class="executive-row">
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="assets/headshot_ShreayPatel.PNG" width="150"/>
+                    <p><b>Shreay Patel</b></p>
+                    <p class="execsubtext">President</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/shreay.patel" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=s.patel41@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="https://storage.googleapis.com/a1aa/image/AXMchR3breyCPSndPBDrmJj6VchrfvY9WQhA0gjvmKldTbzTA.jpg" width="150"/>
+                    <p><b>Helly Patel</b></p>
+                    <p class="execsubtext">Vice President Internal</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/hllyp17" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=h.patel41@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="https://storage.googleapis.com/a1aa/image/AXMchR3breyCPSndPBDrmJj6VchrfvY9WQhA0gjvmKldTbzTA.jpg" width="150"/>
+                    <p><b>Dhir Patel</b></p>
+                    <p class="execsubtext">Vice President External</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/dhirppatel" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=d.patel52@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="assets/swetha.jpg" width="150"/>
+                    <p><b>Shwetha Pradeep</b></p>
+                    <p class="execsubtext">Secretary</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/shwetha._pradeep" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=s.pradeep1@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="executive-row">
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="assets/jignesh.jpg" width="150"/>
+                    <p><b>Jignesh Chadha</b></p>
+                    <p class="execsubtext">Treasurer</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/jigneshchadha" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=j.chadha@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="https://storage.googleapis.com/a1aa/image/AXMchR3breyCPSndPBDrmJj6VchrfvY9WQhA0gjvmKldTbzTA.jpg" width="150"/>
+                    <p><b>Megh Mistry</b></p>
+                    <p class="execsubtext">Event Coordinator</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/meghmistry94" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=m.mistry1@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="executive">
+                    <img alt="Executive Image" height="150" src="assets\Screenshot 2024-11-23 073650.png" width="150"/>
+                    <p><b>Aarya Golthi</b></p>
+                    <p class="execsubtext">Public Relations Officer</p>
+                    <div class="exec-hover">
+                        <p class="exec-description">Shreay is passionate about leading the HSA and organizing cultural events.</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/aarya.g0/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=a.golthi@share.epsb.ca&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img alt="About Image" src="assets\IMG_5561.JPG"/>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2><b>About Us</b></h2>
+                        <p>
+                            The Hindu Student Association (HSA) at Old Scona serves as a vibrant cultural hub where students come together to celebrate, explore, and promote the richness of Hindu traditions, values, and heritage. Through engaging events, meaningful discussions, and educational activities, HSA fosters a sense of belonging and cultural pride among its members, while also creating opportunities for the wider school community to learn about and appreciate Hinduism. The club’s mission is to enrich student life by embracing diversity, encouraging cultural exchange, and fostering understanding within Old Scona’s inclusive environment.<br><br>
+                            Led by a dedicated team of executives, HSA organises events such as Diwali and Holi celebrations, food sales, and inter-club collaborations like multicultural potlucks. Bi-weekly meetings feature presentations on cultural topics, interactive games like Kahoots, and reflective discussions, ensuring active engagement and shared learning. Past accomplishments include book giveaways to make Hindu texts accessible and successful partnerships with other cultural and service clubs. Looking ahead, HSA aims to enhance the quality and impact of its events while fundraising to support initiatives and give back to the community through school causes like Ignite-a-thon. Committed to its goals, HSA continues to be a key part of cultural vibrancy and inclusivity at Old Scona Academic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="footer">
+            <p>Hindu Student's Association</p>
+            <img style="border-radius: 50%;" alt="Logo" height="50" src="assets/HSA Logo.png" width="50"/>
+            <p style="margin-top: 9px;" id="login-link">Are you an executive of the club?
+                <a href="auth/login">
+                    <!-- /* From Uiverse.io by Yaya12085 */  -->
+                    <button class="loginbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
+                    <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
+                    <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
+                    <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path>
+                    <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path>
+                    </svg>
+                    Sign in with Google
+                    </button>
+                </a>
+            </p>
+            <p id="logout-link" style="display: none;"><a href="/auth/logout">Log out</a></p>
+            <p style="margin-bottom: 1px;">Contact us:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/hindusofosa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=osahsaclub@gmail.com&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://discord.com/invite/Ee3Uw482" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </body>
+</html>

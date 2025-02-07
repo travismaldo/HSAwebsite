@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="HSAstyle.css">
+    <link rel="icon" type="image/x-icon" href="assets/HSA Logo.png">
+    <script src="HSAscript.js" defer></script>
+</head>
+<body>
+    <div id="nav" class="nav">
+        <img alt="Logo" height="50" src="assets/HSA Logo.png" width="50"/>
+        <h2>Hindu Student's Association</h2>
+        <div class="nav-links">
+            <a href="HSAweb.html">Home</a>
+            <a href="HSAweb.html#about">About</a>
+            <a href="events.html">Events</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </div>
+    <div id="mainctn" class="main-content row">
+        <div class="text-center">
+            <h1>Events</h1>
+            <p>View all of our upcoming and scheduled events here.</p>
+        </div>
+    </div>
+    <div class="executives">
+        <div class="row">
+            <div class="col sm-3">
+                <div class="quick-view">
+                    <h2>Quick View</h2>
+                    <div class="view-options">
+                        <button id="view-month">Month</button>
+                        <button id="view-week">Week</button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="date">Date</option>
+                            <option value="name">Name</option>
+                        </select>
+                    </div>
+                    <input type="text" id="quick-search" placeholder="Search events..." />
+                    <div class="events-list">
+                        <!-- Events will be dynamically populated here -->
+                    </div>
+                </div>
+            </div>
+            <div class="col sm-9">
+                <iframe style="border-radius: 5px;" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FEdmonton&showPrint=0&src=b3NhaHNhY2x1YkBnbWFpbC5jb20&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border:solid 1px #777; padding: 20px;" width="1200" height="680" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div id="eventbg" class="container mt-5">
+            <div class="row">
+                <h2>Event Management Console</h2>
+                <div class="col sm-4">
+                    <form class="forms" id="event-form">
+                        <input type="text" id="title" placeholder="Event Title" required />
+                        <textarea id="description" placeholder="Event Description"></textarea>
+                        <input type="datetime-local" id="startTime" required />
+                        <input type="datetime-local" id="endTime" required />
+                        <button type="submit" class="btn btn-primary">Create Event</button>
+                    </form>
+                </div>
+                <div class="col sm-4">
+                    <form class="forms" id="delete-event-form">
+                        <input type="text" id="search-delete" placeholder="Search Event Title" required />
+                        <input type="hidden" id="delete-event-id" /> <!-- Hidden field for event ID -->
+                        <div id="search-results-delete" class="search-results"></div>
+                        <button type="submit" class="btn btn-danger">Delete Event</button>
+                    </form>
+                </div>
+                <div class="col sm-4">
+                    <form class="forms" id="update-event-form">
+                        <input type="text" id="search-update" placeholder="Search Event Title" required />
+                        <input type="hidden" id="update-event-id" /> <!-- Hidden field for event ID -->
+                        <div id="search-results-update" class="search-results"></div>
+                        <input type="text" id="update-title" placeholder="New Event Title" />
+                        <textarea id="update-description" placeholder="New Event Description"></textarea>
+                        <input type="datetime-local" id="update-startTime" />
+                        <input type="datetime-local" id="update-endTime" />
+                        <button type="submit" class="btn btn-warning">Update Event</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        <p>Hindu Student's Association</p>
+        <img style="border-radius: 50%;" alt="Logo" height="50" src="assets/HSA Logo.png" width="50"/>
+        <p style="margin-top: 9px;" id="login-link">Are you an executive of the club?
+            <a href="auth/login">
+                <!-- /* From Uiverse.io by Yaya12085 */  -->
+                <button class="loginbutton">
+                <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
+                <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
+                <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
+                <path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path>
+                <path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path>
+                </svg>
+                Sign in with Google
+                </button>
+            </a>
+        </p>
+        <p id="logout-link" style="display: none;"><a href="/auth/logout">Log out</a></p>
+        <p style="margin-bottom: 1px;">Contact us:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/hindusofosa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=osahsaclub@gmail.com&tf=cm" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://discord.com/invite/Ee3Uw482" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+</body>
+</html>
